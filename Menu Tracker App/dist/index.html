@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Tracker</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+<h1>Menu Tracker</h1>
+<nav class="navbar">
+	<div class="container-fluid">
+		<!-- Nav Header -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><span class="fa fa-home"></span><span class="link"> Dashboard</span></a>
+		</div>
+		<!-- Nav Collapse -->
+		<div class="navbar-collapse collapse" id="collapse-1">
+			<!-- Nav Left -->
+			<ul class="nav navbar-nav">
+				<!-- Products -->
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="fa fa-tags"></span><span class="link"> Cycles</span> <span class="fa fa-caret-down"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#"><span class="fa fa-tag"></span> Start New</a></li>
+						<li><a href="#"><span class="fa fa-tag"></span> Edit Current</a></li>
+					</ul>
+				</li>
+				<!-- Services -->
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="fa fa-gears"></span><span class="link"> Reports</span> <span class="fa fa-caret-down"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#"><span class="fa fa-gear"/></span> Alt. Count</a></li>
+						<li><a href="#"><span class="fa fa-gear"/></span> Alt. Sheet</a></li>
+						<li><a href="#"><span class="fa fa-gear"/></span> Patient Info</a></li>
+					</ul>
+				</li>
+				
+				<!-- Contact -->
+				<li><a href="#"><span class="fa fa-phone"></span><span class="link"> Contact</span></a></li>
+			</ul>
+			<!-- Nav Right -->
+			<form class="navbar-form navbar-right">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search">
+				</div>
+				<button type="submit" class="btn"><span class="fa fa-search"></span></button>
+			</form>
+		</div>
+	</div>
+</nav>
+</header>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'></script><script  src="./script.js"></script>
+
+
+<form>
+	<div class="form-group">
+    <label for="exampleFormControlInput1">Patient Name</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Diet</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Regular</option>
+      <option>Advanced</option>
+      <option>Mech. Altered</option>
+      <option>Puree</option>
+     
+    </select>
+    </div>
+
+    <div class="form-group">
+    <label for="exampleFormControlInput1">Room Number</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="number">
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Unit</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>Revere</option>
+      <option>Minuteman</option>
+      <option>Hancock</option>
+      <option>Monroe</option>
+    </select>
+  </div>
+</form>
+
+<form class="daily"> <h3>Monday</h3>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">Main</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">Alt</label>
+</div>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Special Notes</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
+
+<form class="daily">
+ <h3>Tuesday</h3>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">Main</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">Alt</label>
+</div>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Special Notes</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
+<form class="daily">
+ <h3>Wednesday</h3>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">Main</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">Alt</label>
+</div>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Special Notes</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
+<form class="daily">
+ <h3>Thursday</h3>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">Main</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">Alt</label>
+</div>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Special Notes</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
+<form class="daily">
+ <h3>Friday</h3>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">Main</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">Alt</label>
+</div>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Special Notes</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
+<form class="daily">
+ <h3>Saturday</h3>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">Main</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">Alt</label>
+</div>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Special Notes</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
+<form class="daily">
+ <h3>Sunday</h3>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">Main</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">Alt</label>
+</div>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Special Notes</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+</form>
+
+<div>
+<form>
+<div>
+<button class="submit" type="button" class="btn btn-primary btn-lg">Submit</button>
+</div>
+</form>
+</div>
+</body>
+</html>
